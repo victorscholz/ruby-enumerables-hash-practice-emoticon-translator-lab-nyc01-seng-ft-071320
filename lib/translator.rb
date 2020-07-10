@@ -23,7 +23,7 @@ def get_japanese_emoticon(emote, emoticons)
     library[key][:english] == emoticons
   end
   emotion ? library[emoticon][:japanese] : "Sorry, that emoticon was not found"
-  # binding.pry
+  binding.pry
 end
 
 def get_english_meaning
