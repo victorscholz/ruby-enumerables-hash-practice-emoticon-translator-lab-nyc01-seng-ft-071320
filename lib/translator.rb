@@ -26,7 +26,6 @@ def get_japanese_emoticon(emote, emoticons)
   emotion ? library[emoticon][:japanese] : "Sorry, that emoticon was not found"
   # binding.pry
 end
-
-def get_english_meaning
+(emote, emoticons)
   # code goes here
 end
