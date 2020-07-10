@@ -28,5 +28,9 @@ def get_japanese_emoticon(emote, emoticons)
 end
 
 def get_english_meaning(emote, emoticons)
-  # code goes here
+  library = load_library(emote)
+  emoticons = library.keys.find do |key|
+    library[key][:japanese] == emoticon
+  end
+  
 end
