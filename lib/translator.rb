@@ -30,7 +30,7 @@ end
 def get_english_meaning(emote, emoticons)
   library = load_library(emote)
   emoticons = library.keys.find do |key|
-    library[key][:japanese] == emoticon
+    library[key][:japanese] == emoticons
   end
   emoticons ? emoticons : "Sorry, that emoticon was not found"
 end
